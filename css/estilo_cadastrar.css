@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #e6e6e6;
+}
+
+/*
+****Layout ****
+*/
+
+#area-cabecalho{
+    background-color: #f7b600;
+    padding: 15px;
+    text-align: center;
+}
+
+#area-logo, #area-menu{
+    padding: 10px;
+}
+
+#area-principal{
+    width: 920;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#area-central, #area-lateral{
+    background: orange;
+}
+
+#area-central{
+    width: 970;
+    float: left;
+}
+
+#area-lateral{
+    width: 240;
+    float: right;
+}
+
+.conteudo{
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+.conteudo-lateral{
+    background: white; 
+    padding: 20px;
+    margin-bottom: 20px;
+    
+}
+
+
+#rodape{
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    padding-left: 956px;
+    background: #CCC;
+}
+
+#tabela-dados{
+    clear: both;
+    margin-top: 15px;
+}
+
+/*
+****Formatação do Menu ****
+*/
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #F7b600;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+#area-cabecalho a:link, #area-cabecalho a:visited {
+    color: #FFF;
+    padding: 8px 12px;
+}
+
+#area-cabecalho a:hover{
+    color: #f7b600;
+    background: #FFF;
+    text-decoration: none;
+}
+
+/*
+****Formatações Gerais ****
+*/
+
+h1{
+    color:#4e4e4e;
+    font-size: 2.5em;
+}
+
+h2{
+    color: #f7b600;
+    text-align: center;
+}
+
+h3{
+    color: #565656;
+    background: #CCC;
+    padding: 5px;
+}
+
+.branco{
+    color: white;
+}
+
+#autor{
+    width: 120;
+    height: 150;
+}
+
+#gustavo{
+    margin-top: -150px;
+    margin-left: 127px;
+}
+input.submit{
+    color: #fff;
+    background-color: #f79000;
+    border: 7px solid #db7d00;
+    cursor: pointer;
+}
+
+input[type="text"], select{
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+input[type="radio"]{
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+label {
+    margin-bottom: 0.2em;
+    color: #666;
+}
+
+/*
+****Formulário****
+*/
+
+#nome{
+   margin-left: 100px;
+}
+
+#name{
+    margin-left: 100px;
+}
+
+#rg{
+    margin-left: -4px;
+    margin-top: -1px;
+}
+
+#rg-label{
+    margin-left: 310px;
+    margin-top: -60px;
+}
+
+#cpf{
+    margin-left: -5px;
+}
+
+#cpf-label{
+    margin-left: 500px;
+    margin-top: -60px;
+}
+
+#endereco-label{
+    margin-left: 100px;
+}
+
+#numero-label{
+    margin-left: 300px;
+    margin-top: -60px;
+}
+
+#bairro-label{
+    margin-left: 496px;
+    margin-top: -60px;
+}
+
+#cep-bairro{
+    margin-left: 100px;
+}
+
+#fixo-label{
+    margin-left: 300px;
+    margin-top: -60px;
+}
+
+#celular-label{
+    margin-left: 496px;
+    margin-top: -60px;
+}
+
+#cidade-label{
+    margin-left: 100px;
+}
+
+#estado-label{
+    margin-left: 300px;
+    margin-top: -80px;
+}
+
+#sexo-radio{
+    margin-left: 499px;
+    margin-top: -49px;
+}
+
+#confirmar{
+    margin-left: 405px;
+    margin-top: -6px;
+}
+
+
