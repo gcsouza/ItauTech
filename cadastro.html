@@ -1,0 +1,164 @@
+<html>
+<head>
+    <title>Itaú Tech</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/estilo_cadastrar.css">
+    <link rel="icon" href="imagens/itau-tech.png"/>
+    <script src="js/funcoes.js"></script>
+
+</head>
+
+<body>
+
+    <div id="area-cabecalho">
+        <div id="area-logo">
+            <h1><span class="branco">Itaú Tech</span> - Programa de Formação</h1>
+        </div>
+        <div id="area-menu">
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+
+    <div id="area-principal">
+        <div id="area-central">
+            <div class="conteudo">
+                <h2>Cadastrar</h2><br>
+
+                <form name="formulario" action="index.html" method="POST" id="registrar-formulario">
+                    <label for="name" id="name">Nome:</label><br>
+                        <input type="text" placeholder="Digite o seu nome" name="nome" id="nome" maxlength="40" required> <br>
+    
+                  <div id="rg-label">
+                    <label for="rg" >RG:</label>
+                        <input type="text" placeholder="XX.XXX.XXX-XX" name="rg" id="rg" maxlength="12"> <br>
+                 </div>
+    
+                 <div id="cpf-label">
+                    <label for="cpf">CPF:</label><br>
+                        <input type="text" placeholder="XXXXXXXXXXX" name="cpf" id="cpf" maxlength="11" required><br>              
+                </div>
+
+                <div id="endereco-label">
+                    <label for="endereco">Endereço: </label><br>
+                        <input type="text" placeholder="Digite o seu endereço" name="endereco" id="endereco" maxlength="50" required><br>
+                </div>  
+
+                <div id="numero-label">
+                    <label for="numero">Número:</label><br>
+                        <input type="text" placeholder="Digite o número" name="numero" id="numero" maxlength="5" required><br>
+                </div>
+    
+                <div id="bairro-label">
+                    <label for="bairro">Bairro:</label><br>
+                        <input type="text" placeholder="Digite o seu bairro" name="bairro" id="bairro" maxlength="20"><br>
+                </div>
+
+                <div id="cep-bairro">
+                    <label for="cep">CEP:</label><br>
+                        <input type="text" placeholder="00000-000" name="cep" id="cep" maxlength="9"><br>
+                </div>
+
+                <div id="fixo-label">
+                    <label for="fixo">Telefone Fixo: </label><br>
+                        <input type="text" placeholder="(11) 9999-9999" name="fixo" id="fixo" maxlength="14"><br>
+                </div>
+    
+                <div id="celular-label">
+                    <label for="celular">Telefone Celular:</label><br>
+                        <input type="text" placeholder="(11) 99999-9999" name="celular" id="celular" maxlength="14" required><br>
+                </div>
+
+                <div id="cidade-label">
+                    <label for="cidade">Cidade:</label>
+                        <input type="text" placeholder="Digite a sua cidade" name="cidade" id="cidade" maxlength="25"><br><br>
+                </div>
+
+                <div id="estado-label">
+                    <label for="estado">Estado:</label>
+                        <select name="estado" id="estado">
+                            <option value="estado">Selecione o Estado</option> 
+                            <option value="ac">Acre</option> 
+                            <option value="al">Alagoas</option> 
+                            <option value="am">Amazonas</option> 
+                            <option value="ap">Amapá</option> 
+                            <option value="ba">Bahia</option> 
+                            <option value="ce">Ceará</option> 
+                            <option value="df">Distrito Federal</option> 
+                            <option value="es">Espírito Santo</option> 
+                            <option value="go">Goiás</option> 
+                            <option value="ma">Maranhão</option> 
+                            <option value="mt">Mato Grosso</option> 
+                            <option value="ms">Mato Grosso do Sul</option> 
+                            <option value="mg">Minas Gerais</option> 
+                            <option value="pa">Pará</option> 
+                            <option value="pb">Paraíba</option> 
+                            <option value="pr">Paraná</option> 
+                            <option value="pe">Pernambuco</option> 
+                            <option value="pi">Piauí</option> 
+                            <option value="rj">Rio de Janeiro</option> 
+                            <option value="rn">Rio Grande do Norte</option> 
+                            <option value="ro">Rondônia</option> 
+                            <option value="rs">Rio Grande do Sul</option> 
+                            <option value="rr">Roraima</option> 
+                            <option value="sc">Santa Catarina</option> 
+                            <option value="se">Sergipe</option> 
+                            <option value="SP">São Paulo</option> 
+                            <option value="to">Tocantins</option> 
+                        </select>
+                    </div>
+    
+                    <div id="sexo-radio">
+                        <label for="sexo">Sexo:</label><br>
+                            <input type="radio" name="sexo" id="sexo" value="M"> Masculino<br>
+                            <input type="radio" name="sexo" id="sexo" value="F"> Feminino<br><br>
+                    </div>
+    
+                    <div id="confirmar"> 
+                        <input type="button" class="submit" onclick="return validarCampos()"  value="Confirmar">          
+                    </div>
+
+                </form>
+
+                <div id="tabela-dados">
+                    <table border="2" width="100%">
+                        <tr>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>RG</th>
+                            <th>Sexo</th>
+                            <th>Endereço</th>
+                            <th>Número</tthd>
+                            <th>Bairro</th>
+                            <th>Cidade</th>
+                            <th>Estado</th>
+                            <th>CEP</th>
+                            <th>Telefone Fixo</th>
+                            <th>Celular</th>
+                        </tr>
+                        <tr>
+                            <td><p id="nomeDigitado"></p></td>
+                            <td><p id="CPFDigitado"></p></td>
+                            <td><p id="rgDigitado"></p></td>
+                            <td><p align="center" id="sexoDigitado"></p></td>
+                            <td><p id="enderecoDigitado"></p></td>
+                            <td><p id="numeroDigitado"></p></td>
+                            <td><p id="bairroDigitado"></p></td>
+                            <td><p id="cidadeDigitado"></p></td>
+                            <td><p id="estadoDigitado"></p></td>
+                            <td><p id="cepDigitado"></p></td>
+                            <td><p id="fixoDigitado"></p></td>
+                            <td><p id="celularDigitado"></p></td>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+
+    <div id="rodape"></div>
+</div>
+
+
+</body>
+</html>
